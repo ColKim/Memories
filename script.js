@@ -11,6 +11,13 @@
 
 // }
 
+var function3 = function(){
+    var memory1 = document.getElementById('mem1').innerHTML;
+    var memory2 = document.getElementById('mem2').innerHTML;
+    var memory3 = document.getElementById('mem3').innerHTML;
+    //api call
+
+}
 
 var populate_img = function(img1, img2, img3){
     x = document.createElement("IMG");
@@ -22,4 +29,5 @@ var populate_img = function(img1, img2, img3){
     x = document.createElement("IMG");
     x.setAttribute("src", img3);
     document.getElementById("img_three").appendChild(img3);
+    
 }
