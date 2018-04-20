@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
+<head>
+</head>
 <body>
 
 <h2>Find Memories</h2>
 
-<p>Welcome! Create a board of memories from your childhood, by typing in 3 keywords. They can refer to the same memory or 3 different memories.</p>
-<p>Ex: camping</p>
+First Memory:<br>
+<input type="text" name="first" id="mem1">
+<br>
+Second Memory:<br>
+<input type="text" name="second" id="mem2">
+<br>
+Third Memory:<br>
+<input type="text" name="third" id="mem3">
+<br><br>
+<button value="Submit" id="submitButton">Submit</button>
+<script>
+  document.getElementById('submitButton').addEventListener('click', function(){
+    var memory1 = document.getElementById('mem1').innerHTML;
+    var memory2 = document.getElementById('mem2').innerHTML;
+    var memory3 = document.getElementById('mem3').innerHTML;
+    var result = [memory1, memory2, memory3];
+    console.log(result);
+    console.log("PUMPKIN");
+  });
 
-<form action="memories_board.php" method="post">
-  First Memory:<br>
-  <input type="text" name="first">
-  <br>
-  Second Memory:<br>
-  <input type="text" name="second">
-  <br>
-  Third Memory:<br>
-  <input type="text" name="third">
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
+</script>
+<script src="script.js"></script>
+<p>Click "Start" to make a board of memories.</p>
 
-<p>Click "Submit" to make a board of memories.</p>
+
 
 </body>
 </html>
