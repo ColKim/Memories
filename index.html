@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -18,10 +19,10 @@ Third Memory:<br>
 <button value="Submit" id="submitButton">Submit</button>
 <script>
   document.getElementById('submitButton').addEventListener('click', function(){
-    var memory1 = document.getElementById('mem1').innerHTML;
-    var memory2 = document.getElementById('mem2').innerHTML;
-    var memory3 = document.getElementById('mem3').innerHTML;
-    var result = [memory1, memory2, memory3];
+    var value1 = $( "#mem1" ).val();
+    var value2 = $( "#mem2" ).val();
+    var value3 = $( "#mem3" ).val();
+    var result = [value1, value2, value3];
     console.log(result);
     console.log("PUMPKIN");
   });
