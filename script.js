@@ -1,6 +1,11 @@
 
 
-var 
+var button = document.getElementById('submit-button');
+if(button){
+  el.addEventListener('click', function() {
+      //save the memories here
+  });
+}
 
 var populate_img = function(img1, img2, img3){
     x = document.createElement("IMG");
